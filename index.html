@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>MY LIBRARY</h2>
+    <div class="lib">
+
+    </div>
+    <button class="open-form-btn" onclick="openForm()">Add a new book</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Add Book</h1>
+      
+          <label for="title"><b>Title</b></label>
+          <input type="text" placeholder="Enter Book Title" name="title" required>
+      
+          <label for="author"><b>Author</b></label>
+          <input type="text" placeholder="Enter Author" name="author" required>
+      
+          <label for="pages"><b>Pages</b></label>
+          <input type="number" placeholder="Enter total # of pages" name="pages" required>
+
+          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    <script src="book_object.js"></script>
+</body>
+</html>

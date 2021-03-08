@@ -1,0 +1,87 @@
+
+h1, h2 {
+    text-align: center;
+}
+
+.onShelf {
+    border-width: 5px;
+    border-style: solid;
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    white-space: pre;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+.lib {
+    display: flex;
+    width: 800px;
+}
+
+/* Button used to open contact form - fixed at the bottom of page */
+.open-form-btn {
+    font-family: 'Verdana', Courier, monospace;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+    background: linear-gradient(rgb(255, 91, 176) 5%, rgb(239, 2, 125) 100%) rgb(255, 91, 176);
+    border: 1px solid rgb(238, 30, 181);
+    text-shadow: rgb(199 0 103) 0px 1px 0px;
+    border-radius: 6px;
+    bottom: 10px;
+    position: fixed;
+    right: 15px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    border: 2px solid #f1f1f1;
+    /* The z-index property specifies the stack order of an element */
+    /* A element with a great stack order is always in front of an element with a lower stack order */
+    /* z-index works only on positioned elements: absolute, relative, fixed or sticky  */
+}
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus,  .open-form-btn:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #4CAF;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.form-container .cancel {
+    background-color: black;
+}
+
+/* Add a hover effect to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
